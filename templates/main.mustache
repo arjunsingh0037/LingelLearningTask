@@ -1,0 +1,19 @@
+{{!
+    @template block_lingellearning/main
+    This template renders the main content area for the lingellearning block.
+}}
+
+
+<div id="block-lingellearning" class="block-cards" data-region="lingel-learning"
+        data-displaycourse="{{displaycourse}}">
+    <div class="container-fluid">
+
+    </div>
+</div>
+
+
+{{#js}}
+    require(['block_lingellearning/main'], function(Main) {
+        Main.init('#block-lingellearning');
+    });
+{{/js}}
